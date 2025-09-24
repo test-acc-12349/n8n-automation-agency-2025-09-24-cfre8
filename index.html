@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n8n Automation Agency | Streamline Your Business Processes</title>
+    <meta name="description" content="n8n automation solutions for any business. Save time, reduce errors, and improve productivity with our expert automation services.">
+    <meta name="keywords" content="n8n, automation, workflow, business automation, productivity">
+    <meta property="og:title" content="n8n Automation Agency">
+    <meta property="og:description" content="n8n automation for any business. Save time, money, and energy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://test.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800 bg-white">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-blue-600 flex items-center">
+                        <i class="fas fa-bolt mr-2"></i>
+                        <span>n8n Agency</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#features" class="text-base font-medium text-gray-700 hover:text-blue-600 transition duration-300">Features</a>
+                    <a href="#benefits" class="text-base font-medium text-gray-700 hover:text-blue-600 transition duration-300">Benefits</a>
+                    <a href="#faq" class="text-base font-medium text-gray-700 hover:text-blue-600 transition duration-300">FAQ</a>
+                    <a href="#contact" class="text-base font-medium text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+                </nav>
+                
+                <!-- Mobile Navigation Toggle -->
+                <div class="md:hidden" x-data="{ open: false }">
+                    <button @click="open = !open" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" x-show="!open" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg class="h-6 w-6" x-show="open" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile Menu -->
+                    <div x-show="open" @click.away="open = false" class="absolute top-20 right-0 left-0 bg-white shadow-md rounded-lg p-4 mx-4">
+                        <div class="flex flex-col space-y-4">
+                            <a href="#features" class="text-base font-medium text-gray-700 hover:text-blue-600 transition duration-300">Features</a>
+                            <a href="#benefits" class="text-base font-medium text-gray-700 hover:text-blue-600 transition duration-300">Benefits</a>
+                            <a href="#faq" class="text-base font-medium text-gray-700 hover:text-blue-600 transition duration-300">FAQ</a>
+                            <a href="#contact" class="text-base font-medium text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="https://test.com" class="inline-flex items-center px-6 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 transform hover:scale-105">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-50 to-indigo-50 py-20 md:py-28 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1579403124614-197f69d8187b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80')] bg-cover bg-center opacity-5"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
+                    n8n Automation Agency
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 mb-10 leading-relaxed">
+                    n8n automation for any business
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="https://test.com" class="w-full sm:w-auto inline-flex justify-center items-center px-8 py-4 border border-transparent text-base md:text-lg font-medium rounded-md shadow-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 transform hover:scale-105">
+                        Automate Your Business
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#features" class="w-full sm:w-auto inline-flex justify-center items-center px-8 py-4 border border-gray-300 text-base md:text-lg font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Abstract shapes -->
+            <div class="absolute -bottom-16 -left-16 w-64 h-64 bg-blue-100 rounded-full opacity-70 mix-blend-multiply blur-3xl"></div>
+            <div class="absolute -top-16 -right-16 w-64 h-64 bg-indigo-100 rounded-full opacity-70 mix-blend-multiply blur-3xl"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Powerful n8n Automation Features
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600">
+                    Streamline your workflows with our cutting-edge automation solutions
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl p-8 border border-gray-100 transition duration-300 transform hover:scale-105">
+                    <div class="bg-blue-100 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Super Fast</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Implement automation solutions at lightning speed. Our n8n workflows are optimized for performance and quick deployment, getting you results in days, not months.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl p-8 border border-gray-100 transition duration-300 transform hover:scale-105">
+                    <div class="bg-blue-100 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Reduce Errors</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Eliminate human error from your business processes. Our automated workflows ensure consistent, accurate results every time, improving data quality and reliability.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl p-8 border border-gray-100 transition duration-300 transform hover:scale-105">
+                    <div class="bg-blue-100 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Improve Productivity</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Free your team from repetitive tasks and focus on what matters. Our n8n automation solutions dramatically increase productivity across your entire organization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section with Image -->
+    <section id="benefits" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    The Benefits of n8n Automation
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600">
+                    Transform your business with powerful workflow automation
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="space-y-8">
+                        <!-- Benefit 1 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Save Time</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Reclaim hours of your workday by automating repetitive tasks. Our clients report saving 15-20 hours per week with our custom n8n workflows.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Benefit 2 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Save Money</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Reduce operational costs by eliminating manual processes. Our automation solutions typically deliver ROI within 3-6 months of implementation.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Benefit 3 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Save Energy</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Eliminate the mental fatigue of repetitive tasks. Let your team focus their creative energy on strategic initiatives that drive business growth.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="n8n Automation Dashboard" class="w-full h-auto rounded-2xl transform transition duration-500 hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 mix-blend-multiply"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    How Our n8n Automation Works
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600">
+                    A simple, proven process to transform your business operations
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="relative">
+                    <div class="absolute top-0 left-0 -ml-4 mt-2 hidden md:block">
+                        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold">1</span>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-8 border border-gray-100 md:ml-8">
+                        <div class="md:hidden mb-4">
+                            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Discover</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            We analyze your current workflows and identify opportunities for automation. Our experts work closely with your team to understand your specific needs.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="relative">
+                    <div class="absolute top-0 left-0 -ml-4 mt-2 hidden md:block">
+                        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold">2</span>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-8 border border-gray-100 md:ml-8">
+                        <div class="md:hidden mb-4">
+                            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Design</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            We create custom n8n workflows tailored to your business requirements. Each solution is designed for maximum efficiency and scalability.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="relative">
+                    <div class="absolute top-0 left-0 -ml-4 mt-2 hidden md:block">
+                        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold">3</span>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-8 border border-gray-100 md:ml-8">
+                        <div class="md:hidden mb-4">
+                            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Deploy</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            We implement your automation solutions with minimal disruption to your operations. Our team provides training and ongoing support to ensure success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-indigo-700 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')] bg-cover bg-center opacity-10"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
+                    Ready to Transform Your Business with n8n Automation?
+                </h2>
+                <p class="text-xl text-blue-100 mb-10 leading-relaxed">
+                    Join hundreds of businesses that have revolutionized their operations with our automation solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="https://test.com" class="w-full sm:w-auto inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md shadow-lg text-blue-700 bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 transform hover:scale-105">
+                        Get Started Today
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto inline-flex justify-center items-center px-8 py-4 border border-white text-lg font-medium rounded-md text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600">
+                    Everything you need to know about our n8n automation services
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto" x-data="{selected:null}">
+                <!-- Question 1 -->
+                <div class="mb-5">
+                    <button 
+                        @click="selected !== 1 ? selected = 1 : selected = null" 
+                        class="flex justify-between items-center w-full px-6 py-5 text-left bg-white rounded-lg shadow-md hover:shadow-lg focus:outline-none"
+                        :class="{'bg-blue-50': selected === 1}"
+                    >
+                        <span class="text-lg font-semibold text-gray-900">What is n8n and how can it help my business?</span>
+                        <svg 
+                            class="w-6 h-6 text-blue-600 transform transition-transform duration-300" 
+                            :class="{'rotate-180': selected === 1}"
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div 
+                        x-show="selected === 1" 
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform -translate-y-4"
+                        x-transition:enter-end="opacity-100 transform translate-y-0"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform translate-y-0"
+                        x-transition:leave-end="opacity-0 transform -translate-y-4"
+                        class="px-6 py-4 bg-white rounded-b-lg shadow-md mt-1"
+                    >
+                        <p class="text-gray-600 leading-relaxed">
+                            n8n is a powerful workflow automation tool that allows businesses to connect different applications, services, and databases to automate repetitive tasks. It helps businesses save time, reduce errors, and improve overall productivity by creating automated workflows that can run with minimal human intervention.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="mb-5">
+                    <button 
+                        @click="selected !== 2 ? selected = 2 : selected = null" 
+                        class="flex justify-between items-center w-full px-6 py-5 text-left bg-white rounded-lg shadow-md hover:shadow-lg focus:outline-none"
+                        :class="{'bg-blue-50': selected === 2}"
+                    >
+                        <span class="text-lg font-semibold text-gray-900">How long does it take to implement an n8n automation solution?</span>
+                        <svg 
+                            class="w-6 h-6 text-blue-600 transform transition-transform duration-300" 
+                            :class="{'rotate-180': selected === 2}"
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
